@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d729cbf4c313221050bf973ed40131c5" label="Candidate Data" max_length="40" name="x_1815655_online_0_candidate_data" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Skill" max_length="40" name="skill" type="glide_list">
+            <choice>
+                <element inactive_on_update="false" label="REACT" sequence="2" value="REACT"/>
+                <element inactive_on_update="false" label="JAVA" sequence="0" value="JAVA"/>
+                <element inactive_on_update="false" label="JAVASCRIPT" sequence="3" value="JAVASCRIPT"/>
+                <element inactive_on_update="false" label="PYTHON" sequence="1" value="PYTHON"/>
+            </choice>
+        </element>
+        <element choice="3" label="Qualification" max_length="40" name="qualification" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="BBA" sequence="3" value="bba"/>
+                <element inactive_on_update="false" label="MTech" sequence="1" value="mtech"/>
+                <element inactive_on_update="false" label="BCA" sequence="2" value="bca"/>
+                <element inactive_on_update="false" label="BTech" sequence="0" value="btech"/>
+            </choice>
+        </element>
+        <element label="Mobile Number" max_length="40" name="mobile_number" type="phone_number_e164"/>
+        <element label="Job Role Applied" max_length="40" name="job_role_applied" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Software Developer" sequence="0" value="software_developer"/>
+                <element inactive_on_update="false" label="Cyber Analyst" sequence="2" value="cyber_analyst"/>
+                <element inactive_on_update="false" label="Backend Developer" sequence="3" value="backend_developer"/>
+                <element inactive_on_update="false" label="Data Scientist" sequence="1" value="data_scientist"/>
+            </choice>
+        </element>
+        <element label="Candidate Name" max_length="40" name="candidate_name" type="string"/>
+        <element label="ID Number" max_length="40" name="id_number" type="string"/>
+    </element>
+</database>

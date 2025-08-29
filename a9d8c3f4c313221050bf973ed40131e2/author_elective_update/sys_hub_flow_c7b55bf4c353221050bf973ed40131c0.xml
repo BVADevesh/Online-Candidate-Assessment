@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>51cbc6c97743011031e3b3c64b5a9907</copied_from>
+        <copied_from_name>FlowTemplate: Record Trigger</copied_from_name>
+        <description>Need to Assess the Candidate based upon his Qualification and Skills</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>assessment_score</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Assessment Score</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c7b55bf4c353221050bf973ed40131c0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Assessment Score</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name>sys_hub_flow_c7b55bf4c353221050bf973ed40131c0</sys_update_name>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 10:46:13</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_variable_value action="DELETE" query="document_key=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN47b55bf4c353221050bf973ed40131c1"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>c7b55bf4c353221050bf973ed40131c0</id>
+        <name>Assessment Score</name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:19</sys_created_on>
+        <sys_id>47b55bf4c353221050bf973ed40131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 09:43:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=47b55bf4c353221050bf973ed40131c1"/>
+    <sys_hub_flow_input action="DELETE" query="model=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN17b55bf4c353221050bf973ed40131e5,53b55bf4c353221050bf973ed40131e8,5bb55bf4c353221050bf973ed40131c8"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assessment Score">c7b55bf4c353221050bf973ed40131c0</model>
+        <model_id>c7b55bf4c353221050bf973ed40131c0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>17b55bf4c353221050bf973ed40131e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 10:46:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=17b55bf4c353221050bf973ed40131e5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assessment Score">c7b55bf4c353221050bf973ed40131c0</model>
+        <model_id>c7b55bf4c353221050bf973ed40131c0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>53b55bf4c353221050bf973ed40131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 09:43:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=53b55bf4c353221050bf973ed40131e8"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assessment Score">c7b55bf4c353221050bf973ed40131c0</model>
+        <model_id>c7b55bf4c353221050bf973ed40131c0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>5bb55bf4c353221050bf973ed40131c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 10:46:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=5bb55bf4c353221050bf973ed40131c8"/>
+    <sys_hub_flow_output action="DELETE" query="model=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN67b59bf4c353221050bf973ed4013109"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Assessment Score">c7b55bf4c353221050bf973ed40131c0</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:21</sys_created_on>
+        <sys_id>67b59bf4c353221050bf973ed4013109</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 10:46:13</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN1c24ef38c393221050bf973ed40131f1"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Assessment Score">c7b55bf4c353221050bf973ed40131c0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 10:46:13</sys_created_on>
+        <sys_id>1c24ef38c393221050bf973ed40131f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 10:46:13</sys_updated_on>
+        <ui_id>afc377b6-a902-4dc8-86e2-d2e58961bd88</ui_id>
+        <values>H4sIAAAAAAAA/9VY32/iOBD+V6I8Uy4BQqBvp1ZIK91tpd29felVlhM7YJ2xs7bTllb9328cx5ACBQrcbfcFyfb8+Gbmm4nN7XPISHgZknE0LsbjZJRGUb8fRcNhP8dxlvWHeRZleBB2QoHnFCQNzjiF5T3mlV0/ongUJ8MkQVJwJiiKUI4FYQQbiuAHgyxhuuR48b1RufLnwbU7z2eME0VFeHl71wlLrMCVoSq8fF47MouSIo4zysHMN4sk+GxhdQ6O4pXyZlTWgV8i4UxLRSyWqBPSR0MFoeCqwFzTTjiHSLCRarHcURSTG8FXGzMmDFgMrfCjZk9gfhRZuYJCWDl1Z8slanLltvOZZDm9KQ2Twu04oO5Q8mouPrsAbJZpgStufJZhp9Jgj5YWswXRICq+zuTDF+9wwkQdXnPIZY75coWNUSyrDNW2FpTTORhCc1yWTExRqeQ9q5UBy7w75bDoFlw+gFPNpqKLcwu8a1nQncD+db39HStmo/gTzIAyAGIcqo1c0rWsVJ2Ve5TzStcHCgvtbIUvda7Qj8qidFE38SGXIhDQuWKl+R0U7mkTykvHEz3ZSZHxihK5BJZan7rFdr3QiJG/K1AmkJrplKouJIwDSjC/wfR94scR/6qN7NCotipvC7VpgVd7TQvEZ2uBQRT9pCYwqvp4PbCP1S7gPdSOyU4SkFW9tVQGucy1uM0IEtU8q1tyjcfto+M4O2GUk1fD+gC4XvnG0i/IFm9F0FC2sD7Wpnbvl5/aJxK2IMjlhdWfZ0smMAhuPjCTk53UyOI1HtTlb81ou4d1vkljHBgZPB0/d+u6ev4eANIrfgVEwTeHcgtwP3G9+Ya6/bNRt997H3WBOLfPS/TLrG1JsL8b2dJ5+Scrj9flgUQthfjlbkn9q+N8xu/12bM+13qz/67mbDPLnVy/QbAz37z+5ybuWIczUG38Ides6IGRKTUr716KSPOA+T/bzht2LXuoDu/kW1y886KftW5xrEBzqBMr4WqpaA5U0AgrigpZCYKaS+WKNrZuBVPaNMKbM+QLNZUSATx2FoGZ0aCWDpbS55gsB0TnFT8VgQ+vwaADCC+owwuW4b0vGW/Mo8EZb3+nzKMJZrxOPTwOylbtqFJSvTGT9lRtR/kPHFgHgorPCur0ibaN71sn2x6sv8RL89Spk1OcDXp4mPbjOIriiKTRKE3j0TArhjgdFKtGQ0iLHMYiWC6AGGAeeSL4qsabo6WZmkf+GwLKv03q6do5GK5XvpbCPlJ7qQksXihz4PHuj6gZF5mUnGKxYmfy0+bFR/nDpGL20vfHtgr9Vx9u5/JVOSr2l2A/KvrJkmJEo94oJvnFKI3Ti0FBhhdjgpMLPM6StE9oPiiO/zzf/QtUOzXqTxQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_hub_flow_variable action="DELETE" query="model=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN97b55bf4c353221050bf973ed40131e4,d3b55bf4c353221050bf973ed40131e7,d7b55bf4c353221050bf973ed40131ea"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>97b55bf4c353221050bf973ed40131e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 09:43:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>d3b55bf4c353221050bf973ed40131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 09:43:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 09:43:20</sys_created_on>
+        <sys_id>d7b55bf4c353221050bf973ed40131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-09 09:43:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=c7b55bf4c353221050bf973ed40131c0"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=c7b55bf4c353221050bf973ed40131c0"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</application>
+        <file_path/>
+        <instance_id>ad681ed51b5ef19c32182f8dee4bcb47</instance_id>
+        <instance_name>dev202521</instance_name>
+        <name>sys_hub_flow_c7b55bf4c353221050bf973ed40131c0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;
+    &lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;
+        &lt;access&gt;public&lt;/access&gt;
+        &lt;acls/&gt;
+        &lt;active&gt;false&lt;/active&gt;
+        &lt;annotation/&gt;
+        &lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=diagramming&lt;/attributes&gt;
+        &lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;
+        &lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;
+        &lt;category/&gt;
+        &lt;compiler_build/&gt;
+        &lt;copied_from&gt;51cbc6c97743011031e3b3c64b5a9907&lt;/copied_from&gt;
+        &lt;copied_from_name&gt;FlowTemplate: Record Trigger&lt;/copied_from_name&gt;
+        &lt;description&gt;Need to Assess the Candidate based upon his Qualification and Skills&lt;/description&gt;
+        &lt;display_name_after_preview/&gt;
+        &lt;flow_priority/&gt;
+        &lt;generation_source/&gt;
+        &lt;internal_name&gt;assessment_score&lt;/internal_name&gt;
+        &lt;label_cache&gt;[]&lt;/label_cache&gt;
+        &lt;latest_snapshot/&gt;
+        &lt;master_snapshot/&gt;
+        &lt;master_snapshot_digest/&gt;
+        &lt;name&gt;Assessment Score&lt;/name&gt;
+        &lt;natlang/&gt;
+        &lt;outputs/&gt;
+        &lt;pre_compiled&gt;false&lt;/pre_compiled&gt;
+        &lt;remote_trigger_id/&gt;
+        &lt;run_as&gt;user&lt;/run_as&gt;
+        &lt;run_with_roles/&gt;
+        &lt;sc_callable&gt;false&lt;/sc_callable&gt;
+        &lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;
+        &lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;
+        &lt;status&gt;draft&lt;/status&gt;
+        &lt;substatus/&gt;
+        &lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:19&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;c7b55bf4c353221050bf973ed40131c0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Assessment Score&lt;/sys_name&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_hub_flow_c7b55bf4c353221050bf973ed40131c0&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 10:46:13&lt;/sys_updated_on&gt;
+        &lt;type&gt;flow&lt;/type&gt;
+        &lt;version&gt;2&lt;/version&gt;
+    &lt;/sys_hub_flow&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_variable_value action="delete_multiple" query="document_key=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_flow_stage action="delete_multiple" query="flow=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_flow_cat_variable_model action="delete_multiple" query="id=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN47b55bf4c353221050bf973ed40131c1"/&gt;
+    &lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;
+        &lt;id&gt;c7b55bf4c353221050bf973ed40131c0&lt;/id&gt;
+        &lt;name&gt;Assessment Score&lt;/name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:19&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;47b55bf4c353221050bf973ed40131c1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_scope/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 09:43:19&lt;/sys_updated_on&gt;
+    &lt;/sys_flow_cat_variable_model&gt;
+    &lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=47b55bf4c353221050bf973ed40131c1"/&gt;
+    &lt;sys_hub_flow_input action="delete_multiple" query="model=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN17b55bf4c353221050bf973ed40131e5,53b55bf4c353221050bf973ed40131e8,5bb55bf4c353221050bf973ed40131c8"/&gt;
+    &lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;array&gt;false&lt;/array&gt;
+        &lt;array_denormalized&gt;false&lt;/array_denormalized&gt;
+        &lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;
+        &lt;audit&gt;false&lt;/audit&gt;
+        &lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;
+        &lt;choice/&gt;
+        &lt;choice_field/&gt;
+        &lt;choice_table/&gt;
+        &lt;column_label/&gt;
+        &lt;comments/&gt;
+        &lt;create_roles/&gt;
+        &lt;default_value/&gt;
+        &lt;defaultsort/&gt;
+        &lt;delete_roles/&gt;
+        &lt;dependent&gt;table_name&lt;/dependent&gt;
+        &lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;
+        &lt;display&gt;false&lt;/display&gt;
+        &lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;
+        &lt;dynamic_creation_script/&gt;
+        &lt;dynamic_default_value/&gt;
+        &lt;dynamic_ref_qual/&gt;
+        &lt;element&gt;current&lt;/element&gt;
+        &lt;element_reference&gt;false&lt;/element_reference&gt;
+        &lt;foreign_database/&gt;
+        &lt;formula/&gt;
+        &lt;function_definition/&gt;
+        &lt;function_field&gt;false&lt;/function_field&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;
+        &lt;label&gt;Record&lt;/label&gt;
+        &lt;mandatory&gt;true&lt;/mandatory&gt;
+        &lt;max_length&gt;200&lt;/max_length&gt;
+        &lt;model display_value="Assessment Score"&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model&gt;
+        &lt;model_id&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model_id&gt;
+        &lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;next_element/&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;primary&gt;false&lt;/primary&gt;
+        &lt;read_only&gt;false&lt;/read_only&gt;
+        &lt;read_roles/&gt;
+        &lt;reference/&gt;
+        &lt;reference_cascade_rule/&gt;
+        &lt;reference_floats&gt;false&lt;/reference_floats&gt;
+        &lt;reference_key/&gt;
+        &lt;reference_qual/&gt;
+        &lt;reference_qual_condition/&gt;
+        &lt;reference_type/&gt;
+        &lt;sizeclass/&gt;
+        &lt;spell_check&gt;false&lt;/spell_check&gt;
+        &lt;staged&gt;false&lt;/staged&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;17b55bf4c353221050bf973ed40131e5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 10:46:12&lt;/sys_updated_on&gt;
+        &lt;table_reference&gt;false&lt;/table_reference&gt;
+        &lt;text_index&gt;false&lt;/text_index&gt;
+        &lt;unique&gt;false&lt;/unique&gt;
+        &lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;
+        &lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;
+        &lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;
+        &lt;virtual&gt;false&lt;/virtual&gt;
+        &lt;virtual_type&gt;script&lt;/virtual_type&gt;
+        &lt;widget/&gt;
+        &lt;write_roles/&gt;
+        &lt;xml_view&gt;false&lt;/xml_view&gt;
+    &lt;/sys_hub_flow_input&gt;
+    &lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17b55bf4c353221050bf973ed40131e5"/&gt;
+    &lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;array&gt;false&lt;/array&gt;
+        &lt;array_denormalized&gt;false&lt;/array_denormalized&gt;
+        &lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;
+        &lt;audit&gt;false&lt;/audit&gt;
+        &lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;
+        &lt;choice/&gt;
+        &lt;choice_field/&gt;
+        &lt;choice_table/&gt;
+        &lt;column_label/&gt;
+        &lt;comments/&gt;
+        &lt;create_roles/&gt;
+        &lt;default_value/&gt;
+        &lt;defaultsort/&gt;
+        &lt;delete_roles/&gt;
+        &lt;dependent/&gt;
+        &lt;dependent_on_field/&gt;
+        &lt;display&gt;false&lt;/display&gt;
+        &lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;
+        &lt;dynamic_creation_script/&gt;
+        &lt;dynamic_default_value/&gt;
+        &lt;dynamic_ref_qual/&gt;
+        &lt;element&gt;changed_fields&lt;/element&gt;
+        &lt;element_reference&gt;false&lt;/element_reference&gt;
+        &lt;foreign_database/&gt;
+        &lt;formula/&gt;
+        &lt;function_definition/&gt;
+        &lt;function_field&gt;false&lt;/function_field&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;
+        &lt;label&gt;Changed Fields&lt;/label&gt;
+        &lt;mandatory&gt;false&lt;/mandatory&gt;
+        &lt;max_length&gt;4000&lt;/max_length&gt;
+        &lt;model display_value="Assessment Score"&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model&gt;
+        &lt;model_id&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model_id&gt;
+        &lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;next_element/&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;primary&gt;false&lt;/primary&gt;
+        &lt;read_only&gt;false&lt;/read_only&gt;
+        &lt;read_roles/&gt;
+        &lt;reference/&gt;
+        &lt;reference_cascade_rule/&gt;
+        &lt;reference_floats&gt;false&lt;/reference_floats&gt;
+        &lt;reference_key/&gt;
+        &lt;reference_qual/&gt;
+        &lt;reference_qual_condition/&gt;
+        &lt;reference_type/&gt;
+        &lt;sizeclass/&gt;
+        &lt;spell_check&gt;false&lt;/spell_check&gt;
+        &lt;staged&gt;false&lt;/staged&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;53b55bf4c353221050bf973ed40131e8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 09:43:20&lt;/sys_updated_on&gt;
+        &lt;table_reference&gt;false&lt;/table_reference&gt;
+        &lt;text_index&gt;false&lt;/text_index&gt;
+        &lt;unique&gt;false&lt;/unique&gt;
+        &lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;
+        &lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;
+        &lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;
+        &lt;virtual&gt;false&lt;/virtual&gt;
+        &lt;virtual_type&gt;script&lt;/virtual_type&gt;
+        &lt;widget/&gt;
+        &lt;write_roles/&gt;
+        &lt;xml_view&gt;false&lt;/xml_view&gt;
+    &lt;/sys_hub_flow_input&gt;
+    &lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53b55bf4c353221050bf973ed40131e8"/&gt;
+    &lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;array&gt;false&lt;/array&gt;
+        &lt;array_denormalized&gt;false&lt;/array_denormalized&gt;
+        &lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;
+        &lt;audit&gt;false&lt;/audit&gt;
+        &lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;
+        &lt;choice/&gt;
+        &lt;choice_field/&gt;
+        &lt;choice_table/&gt;
+        &lt;column_label/&gt;
+        &lt;comments/&gt;
+        &lt;create_roles/&gt;
+        &lt;default_value/&gt;
+        &lt;defaultsort/&gt;
+        &lt;delete_roles/&gt;
+        &lt;dependent/&gt;
+        &lt;dependent_on_field/&gt;
+        &lt;display&gt;false&lt;/display&gt;
+        &lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;
+        &lt;dynamic_creation_script/&gt;
+        &lt;dynamic_default_value/&gt;
+        &lt;dynamic_ref_qual/&gt;
+        &lt;element&gt;table_name&lt;/element&gt;
+        &lt;element_reference&gt;false&lt;/element_reference&gt;
+        &lt;foreign_database/&gt;
+        &lt;formula/&gt;
+        &lt;function_definition/&gt;
+        &lt;function_field&gt;false&lt;/function_field&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;
+        &lt;label&gt;Table Name&lt;/label&gt;
+        &lt;mandatory&gt;false&lt;/mandatory&gt;
+        &lt;max_length&gt;200&lt;/max_length&gt;
+        &lt;model display_value="Assessment Score"&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model&gt;
+        &lt;model_id&gt;c7b55bf4c353221050bf973ed40131c0&lt;/model_id&gt;
+        &lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;next_element/&gt;
+        &lt;order&gt;101&lt;/order&gt;
+        &lt;primary&gt;false&lt;/primary&gt;
+        &lt;read_only&gt;false&lt;/read_only&gt;
+        &lt;read_roles/&gt;
+        &lt;reference/&gt;
+        &lt;reference_cascade_rule/&gt;
+        &lt;reference_floats&gt;false&lt;/reference_floats&gt;
+        &lt;reference_key/&gt;
+        &lt;reference_qual/&gt;
+        &lt;reference_qual_condition/&gt;
+        &lt;reference_type/&gt;
+        &lt;sizeclass/&gt;
+        &lt;spell_check&gt;false&lt;/spell_check&gt;
+        &lt;staged&gt;false&lt;/staged&gt;
+        &lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5bb55bf4c353221050bf973ed40131c8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package/&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 10:46:12&lt;/sys_updated_on&gt;
+        &lt;table_reference&gt;false&lt;/table_reference&gt;
+        &lt;text_index&gt;false&lt;/text_index&gt;
+        &lt;unique&gt;false&lt;/unique&gt;
+        &lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;
+        &lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;
+        &lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;
+        &lt;virtual&gt;false&lt;/virtual&gt;
+        &lt;virtual_type&gt;script&lt;/virtual_type&gt;
+        &lt;widget/&gt;
+        &lt;write_roles/&gt;
+        &lt;xml_view&gt;false&lt;/xml_view&gt;
+    &lt;/sys_hub_flow_input&gt;
+    &lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5bb55bf4c353221050bf973ed40131c8"/&gt;
+    &lt;sys_hub_flow_output action="delete_multiple" query="model=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN67b59bf4c353221050bf973ed4013109"/&gt;
+    &lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;
+        &lt;comment/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Assessment Score"&gt;c7b55bf4c353221050bf973ed40131c0&lt;/flow&gt;
+        &lt;name&gt;Created or Updated&lt;/name&gt;
+        &lt;remote_sys_id/&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:21&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;67b59bf4c353221050bf973ed4013109&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_scope/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 10:46:13&lt;/sys_updated_on&gt;
+        &lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;
+        &lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;
+        &lt;trigger_outputs/&gt;
+        &lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;
+    &lt;/sys_hub_trigger_instance_v2&gt;
+    &lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN1c24ef38c393221050bf973ed40131f1"/&gt;
+    &lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;
+        &lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;
+        &lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;
+        &lt;attributes/&gt;
+        &lt;comment/&gt;
+        &lt;compiled_snapshot/&gt;
+        &lt;display_text/&gt;
+        &lt;flow display_value="Assessment Score"&gt;c7b55bf4c353221050bf973ed40131c0&lt;/flow&gt;
+        &lt;generation_source/&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;parent_ui_id/&gt;
+        &lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 10:46:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1c24ef38c393221050bf973ed40131f1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 10:46:13&lt;/sys_updated_on&gt;
+        &lt;ui_id&gt;afc377b6-a902-4dc8-86e2-d2e58961bd88&lt;/ui_id&gt;
+        &lt;values&gt;H4sIAAAAAAAA/9VY32/iOBD+V6I8Uy4BQqBvp1ZIK91tpd29felVlhM7YJ2xs7bTllb9328cx5ACBQrcbfcFyfb8+Gbmm4nN7XPISHgZknE0LsbjZJRGUb8fRcNhP8dxlvWHeRZleBB2QoHnFCQNzjiF5T3mlV0/ongUJ8MkQVJwJiiKUI4FYQQbiuAHgyxhuuR48b1RufLnwbU7z2eME0VFeHl71wlLrMCVoSq8fF47MouSIo4zysHMN4sk+GxhdQ6O4pXyZlTWgV8i4UxLRSyWqBPSR0MFoeCqwFzTTjiHSLCRarHcURSTG8FXGzMmDFgMrfCjZk9gfhRZuYJCWDl1Z8slanLltvOZZDm9KQ2Twu04oO5Q8mouPrsAbJZpgStufJZhp9Jgj5YWswXRICq+zuTDF+9wwkQdXnPIZY75coWNUSyrDNW2FpTTORhCc1yWTExRqeQ9q5UBy7w75bDoFlw+gFPNpqKLcwu8a1nQncD+db39HStmo/gTzIAyAGIcqo1c0rWsVJ2Ve5TzStcHCgvtbIUvda7Qj8qidFE38SGXIhDQuWKl+R0U7mkTykvHEz3ZSZHxihK5BJZan7rFdr3QiJG/K1AmkJrplKouJIwDSjC/wfR94scR/6qN7NCotipvC7VpgVd7TQvEZ2uBQRT9pCYwqvp4PbCP1S7gPdSOyU4SkFW9tVQGucy1uM0IEtU8q1tyjcfto+M4O2GUk1fD+gC4XvnG0i/IFm9F0FC2sD7Wpnbvl5/aJxK2IMjlhdWfZ0smMAhuPjCTk53UyOI1HtTlb81ou4d1vkljHBgZPB0/d+u6ev4eANIrfgVEwTeHcgtwP3G9+Ya6/bNRt997H3WBOLfPS/TLrG1JsL8b2dJ5+Scrj9flgUQthfjlbkn9q+N8xu/12bM+13qz/67mbDPLnVy/QbAz37z+5ybuWIczUG38Ides6IGRKTUr716KSPOA+T/bzht2LXuoDu/kW1y886KftW5xrEBzqBMr4WqpaA5U0AgrigpZCYKaS+WKNrZuBVPaNMKbM+QLNZUSATx2FoGZ0aCWDpbS55gsB0TnFT8VgQ+vwaADCC+owwuW4b0vGW/Mo8EZb3+nzKMJZrxOPTwOylbtqFJSvTGT9lRtR/kPHFgHgorPCur0ibaN71sn2x6sv8RL89Spk1OcDXp4mPbjOIriiKTRKE3j0TArhjgdFKtGQ0iLHMYiWC6AGGAeeSL4qsabo6WZmkf+GwLKv03q6do5GK5XvpbCPlJ7qQksXihz4PHuj6gZF5mUnGKxYmfy0+bFR/nDpGL20vfHtgr9Vx9u5/JVOSr2l2A/KvrJkmJEo94oJvnFKI3Ti0FBhhdjgpMLPM6StE9oPiiO/zzf/QtUOzXqTxQAAA==&lt;/values&gt;
+    &lt;/sys_hub_action_instance_v2&gt;
+    &lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_hub_flow_variable action="delete_multiple" query="model=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0^sys_idNOT IN97b55bf4c353221050bf973ed40131e4,d3b55bf4c353221050bf973ed40131e7,d7b55bf4c353221050bf973ed40131ea"/&gt;
+    &lt;sys_documentation action="INSERT_OR_UPDATE"&gt;
+        &lt;element&gt;table_name&lt;/element&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;label&gt;Table Name&lt;/label&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;plural/&gt;
+        &lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;97b55bf4c353221050bf973ed40131e4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 09:43:20&lt;/sys_updated_on&gt;
+        &lt;url/&gt;
+        &lt;url_target/&gt;
+    &lt;/sys_documentation&gt;
+    &lt;sys_documentation action="INSERT_OR_UPDATE"&gt;
+        &lt;element&gt;current&lt;/element&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;label&gt;Record&lt;/label&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;plural/&gt;
+        &lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d3b55bf4c353221050bf973ed40131e7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 09:43:20&lt;/sys_updated_on&gt;
+        &lt;url/&gt;
+        &lt;url_target/&gt;
+    &lt;/sys_documentation&gt;
+    &lt;sys_documentation action="INSERT_OR_UPDATE"&gt;
+        &lt;element&gt;changed_fields&lt;/element&gt;
+        &lt;help/&gt;
+        &lt;hint/&gt;
+        &lt;label&gt;Changed Fields&lt;/label&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;name&gt;var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0&lt;/name&gt;
+        &lt;plural/&gt;
+        &lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-08-09 09:43:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d7b55bf4c353221050bf973ed40131ea&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;
+        &lt;sys_update_name/&gt;
+        &lt;sys_updated_by&gt;aes.creator&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-08-09 09:43:20&lt;/sys_updated_on&gt;
+        &lt;url/&gt;
+        &lt;url_target/&gt;
+    &lt;/sys_documentation&gt;
+    &lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=c7b55bf4c353221050bf973ed40131c0"/&gt;
+    &lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=c7b55bf4c353221050bf973ed40131c0"/&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-49657906</payload_hash>
+        <record_name>Assessment Score</record_name>
+        <reverted_from/>
+        <source>12bcac4983d7221039cc5b65eeaad328</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-09 16:03:31</sys_created_on>
+        <sys_id>d4cc208983d7221039cc5b65eeaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1988f92ac330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-09 16:03:31</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>d0cc208934d7221010006282867460ad</update_guid>
+        <update_guid_history>d0cc208934d7221010006282867460ad:0,037c64495dd7221009cfd87f95d67d69:-252834360,e39f88053f572210b00d98755c16a701:-49657906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-21 15:03:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>52fefec5e6064650ac0039f6da33dd21</sys_id>
+        <sys_metadata>c7b55bf4c353221050bf973ed40131c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assessment Score</sys_name>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_scope_delete display_value="">004885f166064016afa5ed4ecc293924</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_c7b55bf4c353221050bf973ed40131c0</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_c7b55bf4c353221050bf973ed40131c0">d4cc208983d7221039cc5b65eeaad3ad</sys_update_version>
+        <sys_updated_by>aes.creator</sys_updated_by>
+        <sys_updated_on>2025-08-21 15:03:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

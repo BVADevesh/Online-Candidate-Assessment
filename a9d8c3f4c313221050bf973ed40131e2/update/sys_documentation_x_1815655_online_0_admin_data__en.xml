@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Admin Data" language="en" table="x_1815655_online_0_admin_data">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Admin Data</label>
+            <language>en</language>
+            <name>x_1815655_online_0_admin_data</name>
+            <plural>Admin Data</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 09:19:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Admin Data</sys_name>
+            <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+            <sys_update_name>sys_documentation_x_1815655_online_0_admin_data__en</sys_update_name>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 09:19:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

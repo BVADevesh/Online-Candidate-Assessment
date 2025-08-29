@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1815655_online_0.CandidateAssessmentUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CandidateAssessmentUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CandidateAssessmentUtils = Class.create();
+CandidateAssessmentUtils.prototype = {
+    // Main method for server-side usage
+    calculateScoreServer: function(candidateSysId) {
+        var score =0;
+
+        var jobRoleScores = {
+            "software_developer": 10,
+            "data_scientist": 9,
+            "cyber_analyst": 8,
+            "backend_developer": 7
+        };
+
+        var skillScores = {
+            "None": 0,
+            "java": 10,
+            "python": 9,
+            "react": 9,
+            "javascript": 8
+        };
+
+        var qualificationScores = {
+            "mtech": 10,
+            "btech": 9,
+            "bca": 7,
+            "bba": 8
+        };
+
+        // Adjust this table name to match your candidate table
+        var candidateGR = new GlideRecord('x_1815655_online_0_candidate_data');
+        if (candidateGR.get(candidateSysId)) {
+            var jobRole = candidateGR.getValue('job_role_applied');
+            var skills = candidateGR.getValue('skill'); 
+            var qualification = candidateGR.getValue('qualification');
+
+            // Add job role score
+            if (jobRoleScores[jobRole]) {
+                score += jobRoleScores[jobRole];
+            }
+            // Add skill scores
+            if (skills) {
+                var skillArray = skills.split(',');
+                for (var i = 0; i < skillArray.length; i++) {
+                    var skill = skillArray[i].trim().toLowerCase();
+                    if (skillScores[skill]) {
+                        score += skillScores[skill];
+                    }
+                }
+            }
+
+            // Add qualification score
+            if (qualificationScores[qualification.toLowerCase()]) {
+                score += qualificationScores[qualification.toLowerCase()];
+            }
+        }
+        return score;
+    }
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-21 14:38:55</sys_created_on>
+        <sys_id>262c4eb08363221039cc5b65eeaad33b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CandidateAssessmentUtils</sys_name>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name>sys_script_include_262c4eb08363221039cc5b65eeaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 05:14:16</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>262c4eb08363221039cc5b65eeaad33b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-21 14:38:55</sys_created_on>
+        <sys_id>ce7c06bc8323221039cc5b65eeaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-21 14:38:55</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

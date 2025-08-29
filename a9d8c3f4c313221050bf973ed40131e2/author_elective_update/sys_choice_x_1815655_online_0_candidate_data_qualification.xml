@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="qualification" table="x_1815655_online_0_candidate_data" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>qualification</element>
+            <name>x_1815655_online_0_candidate_data</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 11:09:45</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>qualification</sys_name>
+            <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+            <sys_update_name>sys_choice_x_1815655_online_0_candidate_data_qualification</sys_update_name>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 11:09:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>qualification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BTech</label>
+            <language>en</language>
+            <name>x_1815655_online_0_candidate_data</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 11:09:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 11:09:45</sys_updated_on>
+            <value>btech</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>qualification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MTech</label>
+            <language>en</language>
+            <name>x_1815655_online_0_candidate_data</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 11:09:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 11:09:45</sys_updated_on>
+            <value>mtech</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>qualification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BCA</label>
+            <language>en</language>
+            <name>x_1815655_online_0_candidate_data</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 11:09:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 11:09:45</sys_updated_on>
+            <value>bca</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>qualification</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BBA</label>
+            <language>en</language>
+            <name>x_1815655_online_0_candidate_data</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>aes.creator</sys_created_by>
+            <sys_created_on>2025-08-09 11:09:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>aes.creator</sys_updated_by>
+            <sys_updated_on>2025-08-09 11:09:45</sys_updated_on>
+            <value>bba</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

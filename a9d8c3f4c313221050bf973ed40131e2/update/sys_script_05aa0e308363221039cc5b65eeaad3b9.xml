@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>true</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1815655_online_0_admin_data</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Assignment Score</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    var candidateSysId = current.candidate + '';
+    gs.info('Triggering for candidate sys_id: ' + candidateSysId);
+    var score = new CandidateAssessmentUtils().calculateScoreServer(candidateSysId);
+    gs.info('Score returned: ' + score);
+    current.assignment_score = score;
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-21 14:46:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05aa0e308363221039cc5b65eeaad3b9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Calculate Assignment Score</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name>sys_script_05aa0e308363221039cc5b65eeaad3b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-29 04:42:32</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=05aa0e308363221039cc5b65eeaad3b9"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>05aa0e308363221039cc5b65eeaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-21 14:43:43</sys_created_on>
+        <sys_id>e89dc6348363221039cc5b65eeaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-21 14:43:43</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

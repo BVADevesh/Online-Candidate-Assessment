@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7940db30c353221050bf973ed40131be" label="Admin Data" max_length="40" name="x_1815655_online_0_admin_data" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Candidate" max_length="32" name="candidate" reference="x_1815655_online_0_candidate_data" type="reference"/>
+        <element label="Assignment Score" max_length="40" name="assignment_score" type="string"/>
+        <index name="index">
+            <element name="candidate"/>
+        </index>
+    </element>
+</database>

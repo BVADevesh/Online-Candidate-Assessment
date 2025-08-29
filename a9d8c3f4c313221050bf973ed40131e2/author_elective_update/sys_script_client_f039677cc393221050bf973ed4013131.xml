@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>candidate</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Skill Score</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Scores mapping
+    var jobRoleScores = {
+        "Software Developer": 10,
+        "Data Scientist": 9,
+        "Cyber Analyst": 8,
+        "Backend Developer": 7
+    };
+
+    var skillScores = {
+        "None": 0,
+        "Java": 10,
+        "Python": 9,
+        "React": 9,
+        "JavaScript": 8
+    };
+
+    var qualificationScores = {
+        "MTech": 10,
+        "BTech": 9,
+        "BCA": 7,
+        "BBA": 8
+    };
+
+    // Get values from form
+    var jobRole = g_form.getValue("job_role_applied");
+    var skills = g_form.getValue("skills"); // comma-separated string for list type
+    var qualification = g_form.getValue("qualification");
+
+    // Calculate score
+    var totalScore = 0;
+
+    if (jobRole && jobRoleScores[jobRole]) {
+        totalScore += jobRoleScores[jobRole];
+    }
+
+    if (skills) {
+        var skillList = skills.split(",");
+        for (var i = 0; i < skillList.length; i++) {
+            var skillTrimmed = skillList[i].trim();
+            if (skillScores[skillTrimmed]) {
+                totalScore += skillScores[skillTrimmed];
+            }
+        }
+    }
+
+    if (qualification && qualificationScores[qualification]) {
+        totalScore += qualificationScores[qualification];
+    }
+
+    // Set value to assessment_score field in Admin table ref
+    g_form.setValue("assessment_score", totalScore);
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>aes.creator</sys_created_by>
+        <sys_created_on>2025-08-09 11:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f039677cc393221050bf973ed4013131</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Skill Score</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_update_name>sys_script_client_f039677cc393221050bf973ed4013131</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-09 16:51:27</sys_updated_on>
+        <table>x_1815655_online_0_admin_data</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</application>
+        <file_path/>
+        <instance_id>ad681ed51b5ef19c32182f8dee4bcb47</instance_id>
+        <instance_name>dev202521</instance_name>
+        <name>sys_script_client_f039677cc393221050bf973ed4013131</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;candidate&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Skill Score&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Scores mapping
+    var jobRoleScores = {
+        "Software Developer": 10,
+        "Data Scientist": 9,
+        "Cyber Analyst": 8,
+        "Backend Developer": 7
+    };
+
+    var skillScores = {
+        "None": 0,
+        "Java": 10,
+        "Python": 9,
+        "React": 9,
+        "JavaScript": 8
+    };
+
+    var qualificationScores = {
+        "MTech": 10,
+        "BTech": 9,
+        "BCA": 7,
+        "BBA": 8
+    };
+
+    // Get values from form
+    var jobRole = g_form.getValue("job_role_applied");
+    var skills = g_form.getValue("skills"); // comma-separated string for list type
+    var qualification = g_form.getValue("qualification");
+
+    // Calculate score
+    var totalScore = 0;
+
+    if (jobRole &amp;&amp; jobRoleScores[jobRole]) {
+        totalScore += jobRoleScores[jobRole];
+    }
+
+    if (skills) {
+        var skillList = skills.split(",");
+        for (var i = 0; i &lt; skillList.length; i++) {
+            var skillTrimmed = skillList[i].trim();
+            if (skillScores[skillTrimmed]) {
+                totalScore += skillScores[skillTrimmed];
+            }
+        }
+    }
+
+    if (qualification &amp;&amp; qualificationScores[qualification]) {
+        totalScore += qualificationScores[qualification];
+    }
+
+    // Set value to assessment_score field in Admin table ref
+    g_form.setValue("assessment_score", totalScore);
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;aes.creator&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-09 11:25:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f039677cc393221050bf973ed4013131&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Skill Score&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Online Candidate Assessment"&gt;a9d8c3f4c313221050bf973ed40131e2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f039677cc393221050bf973ed4013131&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-09 16:51:27&lt;/sys_updated_on&gt;&lt;table&gt;x_1815655_online_0_admin_data&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>684318508</payload_hash>
+        <record_name>Skill Score</record_name>
+        <reverted_from/>
+        <source>8ddce8c183d7221039cc5b65eeaad354</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-09 16:51:27</sys_created_on>
+        <sys_id>fab7b8c5831b221039cc5b65eeaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1988fbe922b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-09 16:51:27</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>72b7b8c5121b221097100700f5b10e28</update_guid>
+        <update_guid_history>72b7b8c5121b221097100700f5b10e28:684318508,e287b4c5841b2210294a5d36a6739e2b:1380675290,68cc208941d7221055f39154b98b72d0:0,987c6049b6d722105e9e144c5a1c2351:-702101433,305f94c556972210a9e43c0235523872:0,8c0f9c85bc972210a573c0acb7005438:1269704109,eb9f88055b5722108bc1f92e0c3cb118:876389822</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-09 16:55:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>06fb7594f9d6496480e58409e9461990</sys_id>
+        <sys_metadata>f039677cc393221050bf973ed4013131</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Skill Score</sys_name>
+        <sys_package display_value="Online Candidate Assessment" source="x_1815655_online_0">a9d8c3f4c313221050bf973ed40131e2</sys_package>
+        <sys_parent display_value="Admin Data">7940db30c353221050bf973ed40131be</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Online Candidate Assessment">a9d8c3f4c313221050bf973ed40131e2</sys_scope>
+        <sys_scope_delete display_value="">004885f166064016afa5ed4ecc293924</sys_scope_delete>
+        <sys_update_name>sys_script_client_f039677cc393221050bf973ed4013131</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f039677cc393221050bf973ed4013131">fab7b8c5831b221039cc5b65eeaad328</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-09 16:55:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
